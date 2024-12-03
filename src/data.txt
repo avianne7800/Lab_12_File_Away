@@ -1,5 +1,8 @@
-Sample data for our file writing example.
-Sample data Line 2.
+a, a, 1, a, 1
+88, joj@jojmail.joj, 1010
+
+om, 2056
+ Line 2.
 Sample data Line 3.
 Sample data Line 4.
 Sample data Line 5.
