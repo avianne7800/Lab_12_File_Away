@@ -1,9 +1,2 @@
 a, a, 1, a, 1
-88, joj@jojmail.joj, 1010
-
-om, 2056
- Line 2.
-Sample data Line 3.
-Sample data Line 4.
-Sample data Line 5.
-Tom Wulf, 1233456, Smithing
+a, b, 2, c, 3

@@ -5,7 +5,6 @@ import java.util.Scanner;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 
 import static java.nio.file.StandardOpenOption.CREATE;
 
@@ -21,13 +20,13 @@ public class DataSaver {
         String email = "";
         int yearOfBirth = 0;
         boolean done1 = false;
-        boolean done2 = false;
+        boolean active = true;
         String fileName = "";
 
         File workingDirectory = new File(System.getProperty("user.dir"));
         Path file = Paths.get(workingDirectory.getPath() + "\\src\\data.txt");
 
-        while(done2) {
+        while(active) {
             done1 = false;
             while (!done1) {
                 firstName = SafeInput.getNonZeroLenString(in, "First name");
@@ -57,7 +56,7 @@ public class DataSaver {
                 e.printStackTrace();
             }
 
-            done2 = SafeInput.getYNConfirm(in,"Add more data?");
+            active = SafeInput.getYNConfirm(in,"Add more data?");
         }
     }
 }
